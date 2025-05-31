@@ -30,7 +30,10 @@ Generates key visualizations to provide immediate insights:
 - Top 10 Commodities by Average Price
 
 ### Data Loading (L)
-Prepares the processed data for storage (e.g., to Google Drive, though the saving mechanism itself might be a subsequent step or user action).
+Prepares and saves the processed DataFrame as a CSV file to a specified Google Drive folder. This process ensures the data is stored in a structured manner, following the Living Stones Foundation's organizational structure within your Google Drive, and includes:
+- Creating the destination directory if it doesn't exist
+- Generating a unique filename based on the current date
+- Handling potential errors during the saving process
 
 ## Data Source
 
@@ -42,7 +45,7 @@ To run this notebook, you will need:
 
 - **Google Colab Environment**: The notebook is designed to run seamlessly in Google Colab
 - **Google Drive Mounted**: The script assumes you will mount your Google Drive within the Colab environment, as it's intended for processed data storage
-- **Python Libraries**: `pandas`, `requests`, `io`, `matplotlib.pyplot`, `seaborn`. These are typically pre-installed in Colab or can be installed via pip
+- **Python Libraries**: `pandas`, `requests`, `io`, `matplotlib.pyplot`, `seaborn`, `os`, `datetime`. These are typically pre-installed in Colab or can be installed via pip
 
 ## Usage
 
@@ -54,6 +57,7 @@ To run this notebook, you will need:
    - Perform data cleaning, filtering, and region categorization
    - Generate and display the various data visualizations
    - Print summary statistics and unique country lists
+   - Save the cleaned DataFrame to your specified Google Drive path
 
 ## Key Insights from Visualizations
 
