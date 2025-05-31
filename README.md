@@ -93,6 +93,4 @@ This chart highlights which commodities command the highest average producer pri
 
 Contributions are welcome! If you have suggestions for improvements, feature additions, or bug fixes, please feel free to open an issue or submit a pull request.
 
-## License
 
-This project is open-sourced under the **MIT License**.
